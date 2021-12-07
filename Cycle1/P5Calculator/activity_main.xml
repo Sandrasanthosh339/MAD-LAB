@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CALCULATOR"
+        android:textSize="25sp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@android:color/black" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="102dp"
+            android:layout_height="59dp"
+            android:id="@+id/et1"
+            android:hint="Value 1"
+            android:layout_marginHorizontal="50dp" />
+
+
+        <EditText
+            android:layout_width="102dp"
+            android:layout_height="59dp"
+            android:id="@+id/et2"
+            android:hint="Value 2"
+            android:layout_marginHorizontal="50dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+
+        <EditText
+            android:textSize="40sp"
+            android:id="@+id/answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:text="Result" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sub"
+            android:text="-"
+            android:textSize="25sp"
+            android:layout_marginBottom="16dp"
+            android:onClick="add"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add"
+            android:text="+"
+            android:textSize="25sp"
+            android:layout_marginBottom="16dp"
+            android:onClick="sum"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mul"
+            android:text="*"
+            android:textSize="25sp"
+            android:layout_marginBottom="16dp"
+            android:onClick="mult"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/div"
+            android:text="/"
+            android:textSize="25sp"
+            android:layout_marginBottom="16dp"
+            android:onClick="divi"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/equlas"
+            android:text="="
+            android:textSize="25sp"
+            android:layout_marginBottom="16dp"
+            android:onClick="Eql"/>
+
+    </LinearLayout>
+</LinearLayout>
